@@ -66,6 +66,7 @@ public class Turnout
         }
     }
 
+    public Turnout GetFirstInstance() { return _first; }
     public static Turnout GetFirst() { return _first; }
     public Turnout GetNext() { return _next; }
     public int GetId() { return _id; }

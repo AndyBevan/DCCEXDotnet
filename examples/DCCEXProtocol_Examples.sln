@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35828.75 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DCCEXProtocol_Basic", ".\DCCEXProtocol_Basic\DCCEXProtocol_Basic.csproj", "{128F2318-2222-4675-B33F-609DE253548C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DCCEXDotnet", "..\src\DCCEXDotnet\DCCEXDotnet.csproj", "{B646CB1E-AD54-489A-C218-5DEFAB951CD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", ".\Shared\Shared.csproj", "{3CE34904-390C-42F8-A5CF-52712F88D411}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DCCEXProtocol_Loco_Control", ".\DCCEXProtocol_Loco_Control\DCCEXProtocol_Loco_Control.csproj", "{4EC4D9AE-9C11-41F1-9442-88F918E0978A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DCCEXProtocol_Roster_etc", ".\DCCEXProtocol_Roster_etc\DCCEXProtocol_Roster_etc.csproj", "{2CBC523D-89CE-48A8-8F14-53AB15F5710C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{128F2318-2222-4675-B33F-609DE253548C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{128F2318-2222-4675-B33F-609DE253548C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{128F2318-2222-4675-B33F-609DE253548C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{128F2318-2222-4675-B33F-609DE253548C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B646CB1E-AD54-489A-C218-5DEFAB951CD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B646CB1E-AD54-489A-C218-5DEFAB951CD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B646CB1E-AD54-489A-C218-5DEFAB951CD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B646CB1E-AD54-489A-C218-5DEFAB951CD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CE34904-390C-42F8-A5CF-52712F88D411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CE34904-390C-42F8-A5CF-52712F88D411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CE34904-390C-42F8-A5CF-52712F88D411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CE34904-390C-42F8-A5CF-52712F88D411}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EC4D9AE-9C11-41F1-9442-88F918E0978A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EC4D9AE-9C11-41F1-9442-88F918E0978A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EC4D9AE-9C11-41F1-9442-88F918E0978A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EC4D9AE-9C11-41F1-9442-88F918E0978A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CBC523D-89CE-48A8-8F14-53AB15F5710C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CBC523D-89CE-48A8-8F14-53AB15F5710C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CBC523D-89CE-48A8-8F14-53AB15F5710C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CBC523D-89CE-48A8-8F14-53AB15F5710C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E73C2D1-C83C-4215-9A9F-130C22CBF4F9}
+	EndGlobalSection
+EndGlobal

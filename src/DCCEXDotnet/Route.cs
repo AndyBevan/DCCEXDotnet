@@ -65,6 +65,7 @@ public class Route
         }
     }
 
+    public Route GetFirstInstance() { return _first; }
     public static Route GetFirst() { return _first; }
     public Route GetNext() { return _next; }
     public int GetId() { return _id; }

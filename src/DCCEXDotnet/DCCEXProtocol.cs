@@ -89,7 +89,11 @@ public class DCCEXProtocol
     public Loco Roster => Loco.GetFirst();
     public Turnout Turnouts => Turnout.GetFirst();
     public Route Routes => Route.GetFirst();
-    public Turntable turntables => Turntable.GetFirst();
+    public Turntable Turntables => Turntable.GetFirst();
+    //public Loco Roster;// => Loco.GetFirst();
+    //public Turnout Turnouts;// => Turnout.GetFirst();
+    //public Route Routes;// => Route.GetFirst();
+    //public Turntable Turntables;// => Turntable.GetFirst();
 
     public DCCEXProtocol(int maxCmdBuffer = 500, int maxCommandParams = 50)
     {
@@ -129,7 +133,7 @@ public class DCCEXProtocol
         _console = console;
     }
 
-    public void EnableHeartbeat(long heartbeatDelay)
+    public void EnableHeartbeat(long heartbeatDelay = 60000)
     {
         _enableHeartbeat = true;
         _heartbeatDelay = heartbeatDelay;
@@ -544,7 +548,7 @@ public void RefreshRouteList()
 
     public Turntable GetTurntableById(int turntableId)
     {
-        for (Turntable tt = turntables; tt != null; tt = tt.GetNext())
+        for (Turntable tt = Turntables; tt != null; tt = tt.GetNext())
         {
             if (tt.GetId() == turntableId)
             {
@@ -558,7 +562,7 @@ public void RefreshRouteList()
     {
         if (_delegate != null)
         {
-            Turntable tt = turntables != null ? Turntable.GetById(turntableId) : null;
+            Turntable tt = Turntables != null ? Turntable.GetById(turntableId) : null;
             if (tt != null)
             {
                 if (tt.GetType() == TurntableType.TurntableTypeEXTT)
@@ -1433,7 +1437,7 @@ public void RefreshRouteList()
 
     private void _ProcessTurntableList()
     {
-        if (turntables != null)
+        if (Turntables != null)
         {
             return;
         }
@@ -1523,7 +1527,7 @@ public void RefreshRouteList()
 
             bool receivedAll = true;
 
-            for (Turntable t = turntables; t != null; t = t.GetNext())
+            for (Turntable t = Turntables; t != null; t = t.GetNext())
             {
                 int turntableNumIndexes = t.GetNumberOfIndexes();
                 int indexCount = t.GetIndexCount();

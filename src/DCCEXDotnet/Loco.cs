@@ -113,6 +113,7 @@ public class Loco
         }
     }
 
+    public Loco GetFirstInstance() { return _first; }
     public static Loco GetFirst() { return _first; }
     public Loco GetNext() { return _next; }
     public int GetAddress() { return _address; }

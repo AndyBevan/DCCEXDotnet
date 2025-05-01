@@ -96,6 +96,7 @@ public class Turntable
     public void SetMoving(bool moving) => _isMoving = moving;
     public bool IsMoving() => _isMoving;
     public int GetIndexCount() => _indexCount;
+    public Turntable GetFirstInstance() { return _first; }
     public static Turntable GetFirst() => _first;
     public void SetNext(Turntable turntable) => _next = turntable;
     public Turntable GetNext() => _next;
